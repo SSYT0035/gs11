@@ -15,6 +15,13 @@ def l_dj(request):
     Dj_data = {'cname': coursename, 'du': duration, 'st': seet}
 
     return render(request,'course/c2.html',Dj_data)
+def cond(request):
+    x=7
+    return render(request,'course/c3.html',{'nm':True,'x':x})
+def std(request):
+    student={'name':['sonam','rahul','ankit']}
+    return render(request,'course/c4.html',student)
+
 
 
 
